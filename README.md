@@ -1,5 +1,5 @@
 # jSynLog
-A distributed log level control framework
+A distributed log level control framework, it can switch the log level on distributed servers
 
 # step1
 Init the maven pom file
@@ -11,7 +11,7 @@ Make the conf.properties
 Set up spring environment
 # step5
 Just start up your applications. 
-You can run the ZkLogLevelService instance on distributed machine
+You can run the ZkLogLevelService instance on distributed servers
 
 # Q&A
 You can setup one web console: To read the data on zookeeper and change the application log configuration on zookeeper
