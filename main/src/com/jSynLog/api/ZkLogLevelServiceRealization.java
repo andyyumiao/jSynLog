@@ -20,7 +20,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Time: 13:34
  * Description:
  */
-public class ZkLogLevelServiceImpl implements ZkLogLevelService {
+public class ZkLogLevelServiceRealization implements ZkLogLevelService {
     private static final Log log = LogFactory.getLog(ZkLogLevelServiceImpl.class);
     private static final AtomicBoolean initFlag = new AtomicBoolean(false);
 
