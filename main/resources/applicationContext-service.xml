@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="zkLogLevelServiceImpl" class="com.jSynLog.api.ZkLogLevelServiceImpl" init-method="init">
+        <property name="zkServers" value="${logtab.zk.servers}"/>
+        <property name="logtabLevelPath" value="${logtab.level.path}"/>
+        <property name="logtabName" value="${logtab.name}"/>
+        <property name="logtabAppDomain" value="${logtab.app.domain}"/>
+    </bean>
+</beans>
+
