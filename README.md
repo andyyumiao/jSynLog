@@ -1,5 +1,5 @@
 # jSynLog
-A distributed log level control framework, it can switch the log level on distributed servers
+A distributed log level control framework based on zookeeper, it can switch the log level on distributed servers
 
 # step1
 Init the maven pom file, you should add in AngularJs library if you need the web console
