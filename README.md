@@ -14,6 +14,6 @@ Just start up your applications.
 You can run the ZkLogLevelService instance on distributed servers
 
 # Q&A
-You can setup one web console: To read the data on zookeeper and change the application log configuration on zookeeper
+You can setup one web console: To read the data and change the application log configuration on zookeeper
 
 
