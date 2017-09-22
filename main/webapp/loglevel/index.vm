@@ -1,0 +1,56 @@
+<div class="main-content">
+    <div class="page-content">
+        <div class="bdp-page-header bdp-clearfix">
+            <h1>日志等级设置</h1>
+            <!--<span class=" icon-chevron-right bdp-bread-arrow">设置默认分组</span>-->
+        </div>
+        <div class="row bdp-sg-column" ng-controller="loglevelCtrl">
+            <div class="bdp-col-xs-8 bdp-col-md-offset-2">
+                <form class="bdp-form-horizontal">
+                    <div class="bdp-prompts bdp-prompts-bl">
+                        <p><b>提示：</b>1：all对应所有日志级别；2：复位功能即恢复系统初始化日志级别</p>
+                    </div>
+                    <!--标题头信息-->
+                    <h4 class="bdp-control-title">修改日志等级</h4>
+                    <div class="bdp-form-group ">
+                        <label class="bdp-col-xs-3 bdp-control-label"><font color="red">*</font>应用域名：</label>
+                        <div class="bdp-col-xs-9">
+                            <select class="bdp-form-control bdp-col-xs-11" ng-model="loglevelForm.domain" ng-options="x for x in appList" ng-change="initLevel()">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bdp-form-group ">
+                        <label class="bdp-col-xs-3 bdp-control-label"><font color="red">*</font>日志目录：</label>
+                        <div class="bdp-col-xs-9">
+                            <select class="bdp-form-control bdp-col-xs-11" ng-model="loglevelForm.package" ng-options="y for y in logLevelList" ng-change="lookfor()">
+                            </select>
+                            <i class="icon-question-sign  bdp-hint-sign" data-hint="选择all是为所有目录设置级别" data-original-title="" data-placement="top"></i>
+                        </div>
+                    </div>
+                    <div class="bdp-form-group ">
+                        <label class="bdp-col-xs-3 bdp-control-label"><font color="red">*</font>日志级别：</label>
+                        <div class="bdp-col-xs-9">
+                            <label class="bdp-radio-inline">
+                                <input type="radio" name="level" ng-model="loglevelForm.level" value="debug">debug
+                            </label>
+                            <label class="bdp-radio-inline">
+                                <input type="radio" name="level" ng-model="loglevelForm.level" value="info">info
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bdp-text-center bdp-tborder">
+                        <button type="button" class="bdp-btn bdp-btn-primary" ng-click="save()">保存</button>
+                        <button type="button" class="bdp-btn bdp-btn-primary" ng-click="reset()">复位</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+#define($javascriptBlock)
+<script type="text/javascript" src="/statics/index.js?_dc=${staticVersion}"></script>
+#end
