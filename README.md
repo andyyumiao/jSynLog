@@ -6,7 +6,7 @@ Init the maven pom file, you should add in AngularJs library if you need the web
 # step2
 Put the classes into your java src and make sure there's nothing compile errors: ZkLogLevelService & ZkLogLevelServiceImpl
 # step3
-Make the conf.properties
+Set up the conf.properties
 # step4
 Set up spring environment
 # step5
